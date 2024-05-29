@@ -13,9 +13,6 @@ function openPerson(personId) {
     var activeButton = document.querySelector(`button[onclick="openPerson('${personId}')"]`);
     activeButton.classList.add('active');  // Highlight the active person
 
-    // Automatically open the first project for the selected person
-    var firstProjectId = personId.replace('Content', 'Project1');
-    openProject(null, firstProjectId);  // Open the first project
 }
 
 function openProject(evt, projectName) {
@@ -40,5 +37,5 @@ function openProject(evt, projectName) {
 
 // Initialize the first person as active on page load
 document.addEventListener('DOMContentLoaded', function() {
-    openPerson('P1Content');  // Automatically open the first person's content
+    openPerson('TContent');  // Automatically open the first person's content
 });

@@ -10,6 +10,7 @@
     <header>
         <nav>
             <ul>
+                <li><button onclick="openPerson('TContent')">Team</button></li>
                 <li><button onclick="openPerson('P1Content')">Justin</button></li>
                 <li><button onclick="openPerson('P2Content')">Declean</button></li>
                 <li><button onclick="openPerson('P3Content')">Daniel</button></li>
@@ -18,6 +19,25 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Content for Team -->
+    <section id="TContent" class="person-content">
+        <div class="tab">
+            <button class="tablinks" onclick="openProject(event, 'pupperRace')">Pupper Race</button>
+            <button class="tablinks" onclick="openProject(event, 'Project2P1')">Project 2</button>
+        </div>
+        <div id="pupperRace" class="tabcontent">
+            <h2>Pupper Race</h2>
+            <p>Details about P4's Project 1...</p>
+            <video width="320" height="480" controls>
+                <source src="files/pupperRace.mp4" type="video/mp4">
+            </video> 
+        </div>
+        <div id="Project2P1" class="tabcontent">
+            <h2>Project 2</h2>
+            <p>Details about P1's Project 2...</p>
+        </div>
+    </section>
 
     <!-- Content for P1 -->
     <section id="P1Content" class="person-content">
