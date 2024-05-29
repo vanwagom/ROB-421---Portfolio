@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><button onclick="openPerson('P1Content')">Justin</button></li>
+                <li><button onclick="openPerson('P2Content')">Declean</button></li>
+                <li><button onclick="openPerson('P3Content')">Daniel</button></li>
+                <li><button onclick="openPerson('P4Content')">Mitchell</button></li>
+                <li><button onclick="openPerson('P5Content')">Zachary</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Content for P1 -->
+    <section id="P1Content" class="person-content">
+        <div class="tab">
+            <button class="tablinks" onclick="openProject(event, 'Project1P1')">Project 1</button>
+            <button class="tablinks" onclick="openProject(event, 'Project2P1')">Project 2</button>
+        </div>
+        <div id="Project1P1" class="tabcontent">
+            <h2>Project 1</h2>
+            <p>Details about P1's Project 1...</p>
+        </div>
+        <div id="Project2P1" class="tabcontent">
+            <h2>Project 2</h2>
+            <p>Details about P1's Project 2...</p>
+        </div>
+    </section>
+
+    <!-- Content for P2 -->
+    <section id="P2Content" class="person-content" style="display:none;">
+        <div class="tab">
+            <button class="tablinks" onclick="openProject(event, 'Project1P2')">Project 1</button>
+            <button class="tablinks" onclick="openProject(event, 'Project2P2')">Project 2</button>
+        </div>
+        <div id="Project1P2" class="tabcontent">
+            <h2>Project 1</h2>
+            <p>Details about P2's Project 1...</p>
+        </div>
+        <div id="Project2P2" class="tabcontent">
+            <h2>Project 2</h2>
+            <p>Details about P2's Project 2...</p>
+        </div>
+    </section>
+
+    <!-- Content for P3 -->
+    <section id="P3Content" class="person-content" style="display:none;">
+        <div class="tab">
+            <button class="tablinks" onclick="openProject(event, 'Project1P3')">Project 1</button>
+            <button class="tablinks" onclick="openProject(event, 'Project2P3')">Project 2</button>
+        </div>
+        <div id="Project1P3" class="tabcontent">
+            <h2>Project 1</h2>
+            <p>Details about P3's Project 1...</p>
+        </div>
+        <div id="Project2P3" class="tabcontent">
+            <h2>Project 2</h2>
+            <p>Details about P3's Project 2...</p>
+        </div>
+    </section>
+
+    <!-- Content for P4 -->
+    <section id="P4Content" class="person-content" style="display:none;">
+        <div class="tab">
+            <button class="tablinks" onclick="openProject(event, 'Project1P4')">Project 1</button>
+            <button class="tablinks" onclick="openProject(event, 'Project2P4')">Project 2</button>
+        </div>
+        <div id="Project1P4" class="tabcontent">
+            <h2>Project 1</h2>
+            <p>Details about P4's Project 1...</p>
+        </div>
+        <div id="Project2P4" class="tabcontent">
+            <h2>Project 2</h2>
+            <p>Details about P4's Project 2...</p>
+        </div>
+    </section>
+
+    <!-- Content for P3 -->
+    <section id="P5Content" class="person-content" style="display:none;">
+        <div class="tab">
+            <button class="tablinks" onclick="openProject(event, 'Project1P5')">Project 1</button>
+            <button class="tablinks" onclick="openProject(event, 'Project2P5')">Project 2</button>
+        </div>
+        <div id="Project1P5" class="tabcontent">
+            <h2>Project 1</h2>
+            <p>Details about P5's Project 1...</p>
+        </div>
+        <div id="Project2P5" class="tabcontent">
+            <h2>Project 2</h2>
+            <p>Details about P5's Project 2...</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

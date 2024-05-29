@@ -1,0 +1,90 @@
+/* Basic styling for body and layout */
+body, html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    background: #333; /* Dark grey background */
+    color: #fff; /* White text for better readability */
+}
+
+header {
+    background: #dc4405; /* OSU Orange */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px; /* Uniform border radius for header */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin: 0; /* Remove default margin */
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li button {
+    color: white;
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+    border-radius: 8px; /* Uniform border radius for buttons */
+}
+
+nav ul li button:hover, nav ul li button:focus {
+    background: #444; /* Darker grey for hover/focus */
+}
+
+nav ul li button.active {
+    background-color: #444; /* Dark grey for active person */
+    color: white;
+}
+
+.content {
+    padding: 20px;
+    margin-top: 10px;
+    background: #444; /* Slightly lighter grey background for content areas */
+    border: 1px solid #555; /* Border to distinguish content areas */
+    border-radius: 8px; /* Uniform border radius for content areas */
+}
+
+.tab {
+    display: flex;
+    justify-content: center; /* Center the tab links horizontally */
+    background-color: #555; /* Light grey for tabs background */
+    padding: 10px 0;
+    border-radius: 8px; /* Uniform border radius for tab area */
+}
+
+.tab button {
+    background-color: inherit;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    margin: 0 10px; /* Space between buttons */
+    transition: 0.3s;
+    border-radius: 8px; /* Uniform border radius for buttons */
+}
+
+.tab button:hover, .tab button.active {
+    background-color: #dc4405; /* OSU Orange for hover and active */
+    color: white;
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    border: 1px solid #555;
+    border-top: none;
+    border-radius: 8px; /* Uniform border radius for content */
+}
