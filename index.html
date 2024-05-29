@@ -13,10 +13,10 @@
             <ul>
                 <li><button onclick="openPerson('TContent')">Team</button></li>
                 <li><button onclick="openPerson('P1Content')">Justin</button></li>
-                <li><button onclick="openPerson('P2Content')">Declean</button></li>
+                <li><button onclick="openPerson('P2Content')">Zachary</button></li>
                 <li><button onclick="openPerson('P3Content')">Daniel</button></li>
                 <li><button onclick="openPerson('P4Content')">Mitchell</button></li>
-                <li><button onclick="openPerson('P5Content')">Zachary</button></li>
+                <li><button onclick="openPerson('P5Content')">Declean</button></li>
             </ul>
         </nav>
     </header>
@@ -25,93 +25,108 @@
     <section id="TContent" class="person-content">
         <div class="tab">
             <button class="tablinks" onclick="openProject(event, 'pupperRace')">Pupper Race</button>
-            <button class="tablinks" onclick="openProject(event, 'Project2P1')">Project 2</button>
+            <button class="tablinks" onclick="openProject(event, 'Project2T')">Project 2</button>
         </div>
         <div id="pupperRace" class="tabcontent">
             <h2>Pupper Race</h2>
-            <p>Details about P4's Project 1...</p>
+            <p>Details about P4's Individual Artifact 1...</p>
             <video width="320" height="480" controls>
                 <source src="files/pupperRace.mp4" type="video/mp4">
             </video> 
         </div>
-        <div id="Project2P1" class="tabcontent">
-            <h2>Project 2</h2>
-            <p>Details about P1's Project 2...</p>
+        <div id="Project2T" class="tabcontent">
+            <h2>Team Artifact 2</h2>
+            <p>Details about P1's Team Artifact 2...</p>
         </div>
     </section>
 
     <!-- Content for P1 -->
     <section id="P1Content" class="person-content">
         <div class="tab">
-            <button class="tablinks" onclick="openProject(event, 'Project1P1')">Project 1</button>
-            <button class="tablinks" onclick="openProject(event, 'Project2P1')">Project 2</button>
+            <button class="tablinks" onclick="openProject(event, 'Project1P1')">Individual Artifact 1</button>
+            <button class="tablinks" onclick="openProject(event, 'Project2P1')">Individual Artifact 2</button>
+            <button class="tablinks" onclick="openProject(event, 'Project3P1')">Individual Artifact 3</button>
         </div>
         <div id="Project1P1" class="tabcontent">
-            <h2>Project 1</h2>
-            <p>Details about P1's Project 1...</p>
+            <h2>Individual Artifact 1</h2>
+            <p>Details about P1's Individual Artifact 1...</p>
         </div>
         <div id="Project2P1" class="tabcontent">
-            <h2>Project 2</h2>
-            <p>Details about P1's Project 2...</p>
+            <h2>Individual Artifact 2</h2>
+            <p>Details about P1's Individual Artifact 2...</p>
+        </div>
+        <div id="Project3P1" class="tabcontent">
+            <h2>Individual Artifact 3</h2>
+            <p>Details about P1's Individual Artifact 3...</p>
         </div>
     </section>
 
     <!-- Content for P2 -->
     <section id="P2Content" class="person-content" style="display:none;">
         <div class="tab">
-            <button class="tablinks" onclick="openProject(event, 'Project1P2')">Project 1</button>
-            <button class="tablinks" onclick="openProject(event, 'Project2P2')">Project 2</button>
+            <button class="tablinks" onclick="openProject(event, 'Project1P2')">Individual Artifact 1</button>
+            <button class="tablinks" onclick="openProject(event, 'Project2P2')">Individual Artifact 2</button>
+            <button class="tablinks" onclick="openProject(event, 'Project3P2')">Individual Artifact 3</button>
         </div>
         <div id="Project1P2" class="tabcontent">
-            <h2>Project 1</h2>
-            <p>Details about P2's Project 1...</p>
+            <h2>Individual Artifact 1</h2>
+            <p>Details about P2's Individual Artifact 1...</p>
         </div>
         <div id="Project2P2" class="tabcontent">
-            <h2>Project 2</h2>
-            <p>Details about P2's Project 2...</p>
+            <h2>Individual Artifact 2</h2>
+            <p>Details about P2's Individual Artifact 2...</p>
+        </div>
+        <div id="Project3P2" class="tabcontent">
+            <h2>Individual Artifact 3</h2>
+            <p>Details about P2's Individual Artifact 3...</p>
         </div>
     </section>
 
     <!-- Content for P3 -->
     <section id="P3Content" class="person-content" style="display:none;">
         <div class="tab">
-            <button class="tablinks" onclick="openProject(event, 'Project1P3')">Project 1</button>
-            <button class="tablinks" onclick="openProject(event, 'Project2P3')">Project 2</button>
+            <button class="tablinks" onclick="openProject(event, 'Project1P3')">Individual Artifact 1</button>
+            <button class="tablinks" onclick="openProject(event, 'Project2P3')">Individual Artifact 2</button>
+            <button class="tablinks" onclick="openProject(event, 'Project3P3')">Individual Artifact 3</button>
         </div>
         <div id="Project1P3" class="tabcontent">
-            <h2>Project 1</h2>
-            <p>Details about P3's Project 1...</p>
+            <h2>Individual Artifact 1</h2>
+            <p>Details about P3's Individual Artifact 1...</p>
         </div>
         <div id="Project2P3" class="tabcontent">
-            <h2>Project 2</h2>
-            <p>Details about P3's Project 2...</p>
+            <h2>Individual Artifact 2</h2>
+            <p>Details about P3's Individual Artifact 2...</p>
+        </div>
+        <div id="Project3P3" class="tabcontent">
+            <h2>Individual Artifact 3</h2>
+            <p>Details about P3's Individual Artifact 3...</p>
         </div>
     </section>
 
     <!-- Content for P4 -->
     <section id="P4Content" class="person-content" style="display:none;">
         <div class="tab">
-            <button class="tablinks" onclick="openProject(event, 'Project1P4')">Project 1</button>
-            <button class="tablinks" onclick="openProject(event, 'Project2P4')">Project 2</button>
-            <button class="tablinks" onclick="openProject(event, 'Project3P4')">Project 3</button>
+            <button class="tablinks" onclick="openProject(event, 'Project1P4')">Individual Artifact 1</button>
+            <button class="tablinks" onclick="openProject(event, 'Project2P4')">Individual Artifact 2</button>
+            <button class="tablinks" onclick="openProject(event, 'Project3P4')">Individual Artifact 3</button>
         </div>
         <div id="Project1P4" class="tabcontent">
-            <h2>Project 1</h2>
-            <p>Details about P4's Project 1...</p>
+            <h2>Individual Artifact 1</h2>
+            <p>Details about P4's Individual Artifact 1...</p>
             <video width="320" height="480" controls>
                 <source src="files/mvw_artifact1.mp4" type="video/mp4">
             </video> 
         </div>
         <div id="Project2P4" class="tabcontent">
-            <h2>Project 2</h2>
-            <p>Details about P4's Project 2...</p>
+            <h2>Individual Artifact 2</h2>
+            <p>Details about P4's Individual Artifact 2...</p>
             <video width="320" height="480" controls>
                 <source src="files/mvw_artifact2.mp4" type="video/mp4">
             </video> 
         </div>
         <div id="Project3P4" class="tabcontent">
-            <h2>Project 3</h2>
-            <p>Details about P4's Project 3...</p>
+            <h2>Individual Artifact 3</h2>
+            <p>Details about P4's Individual Artifact 3...</p>
             <video width="320" height="480" controls>
                 <source src="files/mvw_artifact3.mp4" type="video/mp4">
             </video> 
@@ -121,16 +136,21 @@
     <!-- Content for P3 -->
     <section id="P5Content" class="person-content" style="display:none;">
         <div class="tab">
-            <button class="tablinks" onclick="openProject(event, 'Project1P5')">Project 1</button>
-            <button class="tablinks" onclick="openProject(event, 'Project2P5')">Project 2</button>
+            <button class="tablinks" onclick="openProject(event, 'Project1P5')">Individual Artifact 1</button>
+            <button class="tablinks" onclick="openProject(event, 'Project2P5')">Individual Artifact 2</button>
+            <button class="tablinks" onclick="openProject(event, 'Project3P5')">Individual Artifact 3</button>
         </div>
         <div id="Project1P5" class="tabcontent">
-            <h2>Project 1</h2>
-            <p>Details about P5's Project 1...</p>
+            <h2>Individual Artifact 1</h2>
+            <p>Details about P5's Individual Artifact 1...</p>
         </div>
         <div id="Project2P5" class="tabcontent">
-            <h2>Project 2</h2>
-            <p>Details about P5's Project 2...</p>
+            <h2>Individual Artifact 2</h2>
+            <p>Details about P5's Individual Artifact 2...</p>
+        </div>
+        <div id="Project3P5" class="tabcontent">
+            <h2>Individual Artifact 3</h2>
+            <p>Details about P5's Individual Artifact 3...</p>
         </div>
     </section>
 
