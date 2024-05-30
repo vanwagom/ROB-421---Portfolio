@@ -88,3 +88,23 @@ nav ul li button.active {
     border-top: none;
     border-radius: 8px; /* Uniform border radius for content */
 }
+
+.about-me-container {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+}
+
+.about-me-image {
+    width: 150px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 30px; /* Space between image and content */
+    border-radius: 50%; /* Optional: makes the image circular */
+}
+
+.about-me-content h2 {
+    margin-top: 10; /* Removes default top margin for h2 */
+}
+
+.about-me-content p {
+    margin-top: 10px; /* Adds a bit of space between title and paragraph */
+}
