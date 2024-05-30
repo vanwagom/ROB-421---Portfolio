@@ -12,7 +12,9 @@ body, html {
 }
 
 header {
-    background: #dc4405; /* OSU Orange */
+    background-image: linear-gradient(to right, rgba(220, 68, 5, 0.5), rgba(220, 68, 5, 1)), url('path_to_your_image.jpg');
+    background-size: cover;
+    background-position: center;
     color: #fff; /* White text */
     padding: 20px;
     text-align: center;
@@ -66,7 +68,7 @@ nav ul li button.active {
     display: flex;
     justify-content: center; /* Center the tab links horizontally */
     background-color: #555; /* Light grey for tabs background */
-    margin: 0 60px;
+    margin: 0 10%;
     padding: 10px 0;
     border-radius: 8px; /* Uniform border radius for tab area */
 }
@@ -92,8 +94,7 @@ nav ul li button.active {
     display: none;
     padding: 20px;
     text-align: center; /* Center align text */
-    width: 80%;
-    margin: 0 auto; /* Center align the div */
+    margin: 0 10%;
     border: 1px solid #555;
     border-top: none;
     border-radius: 8px;
