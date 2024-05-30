@@ -1,4 +1,8 @@
 /* Basic styling for body and layout */
+#app {
+    border-radius: 8px;
+}
+
 body, html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
@@ -48,7 +52,9 @@ nav ul li button.active {
     color: white;
 }
 
-.content {
+.person-content {
+    display: flex;
+    justify-content: center;
     padding: 20px;
     margin-top: 10px;
     background: #444; /* Slightly lighter grey background for content areas */
@@ -60,6 +66,7 @@ nav ul li button.active {
     display: flex;
     justify-content: center; /* Center the tab links horizontally */
     background-color: #555; /* Light grey for tabs background */
+    margin: 0 60px;
     padding: 10px 0;
     border-radius: 8px; /* Uniform border radius for tab area */
 }
@@ -84,9 +91,12 @@ nav ul li button.active {
 .tabcontent {
     display: none;
     padding: 20px;
+    text-align: center; /* Center align text */
+    width: 80%;
+    margin: 0 auto; /* Center align the div */
     border: 1px solid #555;
     border-top: none;
-    border-radius: 8px; /* Uniform border radius for content */
+    border-radius: 8px;
 }
 
 .about-me-container,
