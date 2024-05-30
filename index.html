@@ -16,7 +16,7 @@
                 <li><button onclick="openPerson('P2Content')">Zachary</button></li>
                 <li><button onclick="openPerson('P3Content')">Daniel</button></li>
                 <li><button onclick="openPerson('P4Content')">Mitchell</button></li>
-                <li><button onclick="openPerson('P5Content')">Declean</button></li>
+                <li><button onclick="openPerson('P5Content')">Declan</button></li>
             </ul>
         </nav>
     </header>
@@ -38,7 +38,7 @@
             <h2>Team Artifact 2</h2>
             <p>Stuff goes here</p>
             <video width="480" height="320" controls>
-                <source src="files\Catapult Demo.mp4" type="video/mp4">
+                <source src="file" type="video/mp4">
             </video> 
         </div>
     </section>
@@ -53,7 +53,7 @@
         </div>
         <div id="AboutMeP1" class="tabcontent">
             <div class="about-me-container">
-                <img src="files\profilepic.jpg" alt="Your Picture" class="about-me-image">
+                <img src="files/profilepic.jpg" alt="Your Picture" class="about-me-image">
                 <div class="about-me-content">
                     <h2>About Me</h2>
                     <p>My name is Justin Thomas and I am a fourth year mechanical engineering student graduating from Oregon State University in June 2024. I'm passionate about applying my knowledge in design, electronics, coding, robotics, lean manufacturing, and AI to drive innovation.
@@ -61,23 +61,51 @@
                 </div>
             </div>
         </div>
+
         <div id="Project1P1" class="tabcontent">
-            <h2>Individual Artifact 1</h2>
-            <p>Details about P1's Individual Artifact 1...</p>
+            <div class="project-container">
+                <video controls class="project-video">
+                    <source src="files\indiv1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="project-content">
+                    <h2>Individual Artifact 1</h2>
+                    <p>Details about P1's Individual Artifact 1...</p>
+                </div>
+            </div>
         </div>
+
         <div id="Project2P1" class="tabcontent">
-            <h2>Individual Artifact 2</h2>
-            <p>Details about P1's Individual Artifact 2...</p>
+            <div class="project-container">
+                <video controls class="project-video">
+                    <source src="files\indiv2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="project-content">
+                    <h2>Individual Artifact 2</h2>
+                    <p>Details about P1's Individual Artifact 2...</p>
+                </div>
+            </div>
         </div>
+
         <div id="Project3P1" class="tabcontent">
-            <h2>Individual Artifact 3</h2>
-            <p>My name is Justin and I worked on creation and testing of the physical catapult. I 
-                first created multiple ideas on how I could tackle this step. Taking the positives 
-                of each idea, I was able to create a final design to create. Using aluminum, plastic 
-                sheets, and steel bolts and springs, I created our catapult that could attatch on the 
-                pupper robot.</p>
+            <div class="project-container">
+                <video width="480" height="320" controls class="project-video">
+                    <source src="files\Catapult Demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="project-content">
+                    <h2>Individual Artifact 3</h2>
+                    <p>For my third artifact, I worked on creation and testing of the physical catapult. I 
+                        first created multiple ideas on how I could tackle this step. Taking the positives 
+                        of each idea, I was able to create a final design to create. Using aluminum, plastic 
+                        sheets, and steel bolts and springs, I created our catapult that could attach on the 
+                        pupper robot.</p>
+                </div>
+            </div>
         </div>
     </section>
+
 
     <!-- Content for P2 -->
     <section id="P2Content" class="person-content" style="display:none;">
@@ -203,16 +231,26 @@
             </div>
         </div>
         <div id="Project1P5" class="tabcontent">
-            <h2>Individual Artifact 1</h2>
-            <p>Details about P5's Individual Artifact 1...</p>
+            <h2>Individual Artifact 1: Touch Command</h2>
+            <p>For this artifact, I attempted to use Misty's touch sensors to drive it around objects.
+                Using these controls, Misty was able to drive around an obstacle placed in front of her,
+                Turn around and go back to where she started, or do a full loop around the obstacle
+            </p>
         </div>
         <div id="Project2P5" class="tabcontent">
-            <h2>Individual Artifact 2</h2>
-            <p>Details about P5's Individual Artifact 2...</p>
+            <h2>Individual Artifact 2: Yep, that's a...</h2>
+            <p>Using Misty's object detection, I had the robot identify
+                multiple objects. These objects were a book, a person, and a backpack.
+            </p>
         </div>
         <div id="Project3P5" class="tabcontent">
-            <h2>Individual Artifact 3</h2>
-            <p>Details about P5's Individual Artifact 3...</p>
+            <h2>Individual Artifact 3: Strafe</h2>
+            <p>For this artifact, I wanted to be able to get the pupper to move side to side
+                using hardware interface commands. In theory this method would give me more
+                precision and control in how the robot makes any individual move. However
+                in practice, the pupper was far less stable and movement in any given direction
+                was merely a suggestion with a bit of luck.
+            </p>
         </div>
     </section>
 

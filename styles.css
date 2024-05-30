@@ -89,22 +89,31 @@ nav ul li button.active {
     border-radius: 8px; /* Uniform border radius for content */
 }
 
-.about-me-container {
+.about-me-container,
+.project-container {
     display: flex;
     align-items: flex-start; /* Align items to the top */
+    margin-bottom: 20px; /* Space between tab content sections */
 }
 
-.about-me-image {
-    width: 150px; /* Adjust size as needed */
+.about-me-image{
+    width: 250px; /* Adjust size as needed */
     height: auto; /* Maintain aspect ratio */
-    margin-right: 30px; /* Space between image and content */
-    border-radius: 50%; /* Optional: makes the image circular */
+    margin-right: 20px; /* Space between image/video and content */
 }
 
-.about-me-content h2 {
-    margin-top: 10; /* Removes default top margin for h2 */
+.project-video {
+    width: 480px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between image/video and content */
 }
 
-.about-me-content p {
+.about-me-content h2,
+.project-content h2 {
+    margin-top: 0; /* Removes default top margin for h2 */
+}
+
+.about-me-content p,
+.project-content p {
     margin-top: 10px; /* Adds a bit of space between title and paragraph */
 }
