@@ -214,7 +214,10 @@
                 <div class="project-content">
                     <h2>Misty - Comedy routine</h2>
                     <p>For my first artifact, I programmed misty to perform a comedy routine where she waits for the audiences response afterwards and responds accordingly. 
-                        I origonally invisioned Misty to walk around and have better hand gestures 
+                        I origonally invisioned Misty walking around and gesturing at the audience. However for the sake of time I had her stand still and simply move her arms back and forth.
+                    </p>    
+                    <p>
+                        This project was coded using the blockly code language which turned out to be very frustrating as it didn't allow for conventional coding structure, making the process repetative and tedious. Any changes to a simple gesture needed to be reconfigured for each point in the set, this lead to jagged motion and discontinous voice lines. However I was able to get a working demo completed and misty gave a great show!
                     </p>
                 </div>
             </div>
@@ -228,7 +231,10 @@
                 </video>
                 <div class="project-content">
                     <h2>Misty - Follow Left or Right</h2>
+                    <p>My second artifact was the most difficult for me. I wanted to have Misty use her cameras to detect a person and follow them around the room. I succeeded in being able to get a RTSP stream from the webcam and was able to run object detection through openCV and YOLO. However the stream was far to slow, having about a 8 second delay, causing the directions sent to misty unreliable and often overlapping with eachother. I spent a lot of time trying to optimize the stream in order to improve the latency using ffmpeg and much lower resolutions, but I was unable to solve the problem.
+                    </p>
                     <p>
+                    Eventually I pivoted to using Misty's voice recognition system to tell her where to go. This also has several problems, so I further pivoted to using a voice recognizing fuction that could tell if the user said yes or no. I used this fuction to have misty move left when the user says no, and right on yes. The outcome of this project was far simpler than I origonally desired, and I still feel like I could get the object detection system working with a better RTSP stream from Misty's webcam.
                     </p>
                 </div>
             </div>
@@ -242,7 +248,7 @@
                 </video>
                 <div class="project-content">
                     <h2>Mini Pupper - Sense Person and Acknowledge</h2>
-                    <p>
+                    <p>My third artifact consisted of using a web cam and a DAC + speaker connected to a mini pupper to detect a person infront of the pupper and respond with a voice line. This project built on the work I had done for artifact 2 with the Misty, as I was able to use much of the object detection code I had written for it. The code analyzes the camera stream with the YOLO object detection library, and draws a box around any detected objects. I was able to determine the center of this box for any person in the cameras feild of view and used that to determine if someone was standing infront of the pupper. The program then actiavates the speaker with the "hello there" voice line.
                     </p>
                 </div>
             </div>

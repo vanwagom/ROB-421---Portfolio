@@ -100,6 +100,10 @@ nav ul li button.active {
     border-radius: 8px;
 }
 
+.tabcontent p {
+    text-align: left;
+}
+
 .about-me-container,
 .project-container {
     display: flex;
