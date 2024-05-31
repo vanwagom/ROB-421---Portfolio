@@ -3,6 +3,10 @@
     border-radius: 8px;
 }
 
+video {
+    max-height: 500px; /* Sets the maximum height for all videos */
+}
+
 body, html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
