@@ -36,6 +36,10 @@ function openProject(evt, projectName) {
 }
 
 // Initialize the first person as active on page load
-document.addEventListener('DOMContentLoaded', function() {
-    openPerson('TContent');  // Automatically open the first person's content
+document.addEventListener("DOMContentLoaded", function() {
+    // Open the Team tab
+    openPerson('TContent');
+    
+    // Open the Pupper Race project tab
+    document.querySelector('#TContent .tab button.tablinks.active').click();
 });

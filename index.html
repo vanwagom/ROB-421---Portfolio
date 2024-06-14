@@ -12,7 +12,7 @@
         <h1>Team Dog-a-pult's Portfolio</h1>
         <nav>
             <ul>
-                <li><button onclick="openPerson('TContent')">Team</button></li>
+                <li><button class="active" onclick="openPerson('TContent')">Team</button></li>
                 <li><button onclick="openPerson('P1Content')">Justin</button></li>
                 <li><button onclick="openPerson('P2Content')">Zachary</button></li>
                 <li><button onclick="openPerson('P3Content')">Daniel</button></li>
@@ -25,8 +25,18 @@
     <!-- Content for Team -->
     <section id="TContent" class="person-content">
         <div class="tab">
+            <button class="tablinks active" onclick="openProject(event, 'aboutTheClass')">About the Class</button>
             <button class="tablinks" onclick="openProject(event, 'pupperRace')">Pupper Race</button>
 			<button class="tablinks" onclick="openProject(event, 'pupperFinal')">Final Project</button>
+        </div>
+        <div id="aboutTheClass" class="tabcontent">
+            <div class="project-container">
+                <div class="project-content">
+                    <h2>About the Class</h2>
+                    <p>The video shows the final race for the class mini pupper race. We had narrowly won the primaries and then went on to win it all! We were able to get our mini pupper to move farily fast but consistenly had a problem with it moving left or right during it's inital steps. But once we got moving in the right direction our mini pupper moved fast!
+                    </p>
+                </div>
+            </div>
         </div>
         <div id="pupperRace" class="tabcontent">
             <div class="project-container">
