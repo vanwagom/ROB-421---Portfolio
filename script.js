@@ -1,39 +1,63 @@
-function openPerson(personId) {
-    var i, content, personTabs, navButtons;
-    content = document.getElementsByClassName("person-content");
-    navButtons = document.querySelectorAll('nav ul li button');
-
-    for (i = 0; i < content.length; i++) {
-        content[i].style.display = "none";  // Hide all person content divs
-        navButtons[i].classList.remove('active');  // Remove active class from all buttons
+function openPerson(personName) {
+    // Hide all person-content elements
+    var personContent = document.getElementsByClassName("person-content");
+    for (var i = 0; i < personContent.length; i++) {
+        personContent[i].style.display = "none";
     }
 
-    // Display the selected person's content and automatically open their first project
-    document.getElementById(personId).style.display = "block";  // Show the selected person's content
-    var activeButton = document.querySelector(`button[onclick="openPerson('${personId}')"]`);
-    activeButton.classList.add('active');  // Highlight the active person
+    // Remove active class from all buttons
+    var navButtons = document.querySelectorAll("nav ul li button");
+    navButtons.forEach(function(button) {
+        button.classList.remove("active");
+    });
 
+    // Show the selected person-content element
+    document.getElementById(personName).style.display = "block";
+
+    // Add active class to the selected button
+    var selectedButton = document.querySelector(`nav ul li button[onclick="openPerson('${personName}')"]`);
+    if (selectedButton) {
+        selectedButton.classList.add("active");
+    }
+
+    // Automatically activate the "About Me" tab for the selected person
+    var aboutMeTab = document.querySelector(`#${personName} .tab button.tablinks:first-child`);
+    if (aboutMeTab) {
+        aboutMeTab.click();
+    }
 }
 
 function openProject(evt, projectName) {
+    // Hide all tabcontent elements
     var tabcontent = document.getElementsByClassName("tabcontent");
-    var tablinks = document.getElementsByClassName("tablinks");
-
     for (var i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";  // Hide all tabs
-        tablinks[i].classList.remove("active");  // Remove active class from all tab links
+        tabcontent[i].style.display = "none";
     }
 
-    document.getElementById(projectName).style.display = "block";  // Show the selected tab
-    if (evt) {
-        evt.currentTarget.classList.add("active");  // Set the active class on the link
-    } else {
-        var autoActiveLink = document.querySelector(`button[onclick="openProject(event, '${projectName}')"]`);
-        if (autoActiveLink) {
-            autoActiveLink.classList.add('active');
-        }
+    // Remove active class from all tablinks
+    var tablinks = document.getElementsByClassName("tablinks");
+    for (var i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
+
+    // Show the selected tabcontent element
+    document.getElementById(projectName).style.display = "block";
+
+    // Add active class to the clicked tablink
+    evt.currentTarget.className += " active";
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Open the Team tab
+    openPerson('TContent');
+    
+    // Open the Pupper Race project tab
+    var pupperRaceTab = document.querySelector('#TContent .tab button[onclick*="pupperRace"]');
+    if (pupperRaceTab) {
+        pupperRaceTab.click();
+    }
+});
+
 
 // Initialize the first person as active on page load
 document.addEventListener("DOMContentLoaded", function() {
