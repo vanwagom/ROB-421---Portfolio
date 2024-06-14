@@ -1,3 +1,16 @@
+document.addEventListener("DOMContentLoaded", function() {
+    // Open the Team tab
+    openPerson('TContent');
+
+    // Open the About The Class project tab
+    setTimeout(function() {
+        var aboutTheClassTab = document.querySelector('#TContent .tab button[onclick*="aboutTheClass"]');
+        if (aboutTheClassTab) {
+            aboutTheClassTab.click();
+        }
+    }, 100); // Delay to ensure the elements are fully loaded
+});
+
 function openPerson(personName) {
     // Hide all person-content elements
     var personContent = document.getElementsByClassName("person-content");
@@ -12,7 +25,10 @@ function openPerson(personName) {
     });
 
     // Show the selected person-content element
-    document.getElementById(personName).style.display = "block";
+    var selectedPerson = document.getElementById(personName);
+    if (selectedPerson) {
+        selectedPerson.style.display = "block";
+    }
 
     // Add active class to the selected button
     var selectedButton = document.querySelector(`nav ul li button[onclick="openPerson('${personName}')"]`);
@@ -21,10 +37,12 @@ function openPerson(personName) {
     }
 
     // Automatically activate the "About Me" tab for the selected person
-    var aboutMeTab = document.querySelector(`#${personName} .tab button.tablinks:first-child`);
-    if (aboutMeTab) {
-        aboutMeTab.click();
-    }
+    setTimeout(function() {
+        var aboutMeTab = selectedPerson.querySelector(".tab button.tablinks:first-child");
+        if (aboutMeTab) {
+            aboutMeTab.click();
+        }
+    }, 100); // Delay to ensure the elements are fully loaded
 }
 
 function openProject(evt, projectName) {
@@ -41,29 +59,13 @@ function openProject(evt, projectName) {
     }
 
     // Show the selected tabcontent element
-    document.getElementById(projectName).style.display = "block";
+    var selectedProject = document.getElementById(projectName);
+    if (selectedProject) {
+        selectedProject.style.display = "block";
+    }
 
     // Add active class to the clicked tablink
-    evt.currentTarget.className += " active";
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-    // Open the Team tab
-    openPerson('TContent');
-    
-    // Open the Pupper Race project tab
-    var pupperRaceTab = document.querySelector('#TContent .tab button[onclick*="pupperRace"]');
-    if (pupperRaceTab) {
-        pupperRaceTab.click();
+    if (evt && evt.currentTarget) {
+        evt.currentTarget.className += " active";
     }
-});
-
-
-// Initialize the first person as active on page load
-document.addEventListener("DOMContentLoaded", function() {
-    // Open the Team tab
-    openPerson('TContent');
-    
-    // Open the Pupper Race project tab
-    document.querySelector('#TContent .tab button.tablinks.active').click();
-});
+}

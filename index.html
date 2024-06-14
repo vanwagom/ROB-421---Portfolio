@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROB 421 - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js?v=1.0.1" defer></script>
 </head>
 <body>
     <header>
@@ -12,7 +13,7 @@
         <h1>Team Dog-a-pult's Portfolio</h1>
         <nav>
             <ul>
-                <li><button class="active" onclick="openPerson('TContent')">Team</button></li>
+                <li><button onclick="openPerson('TContent')">Team</button></li>
                 <li><button onclick="openPerson('P1Content')">Justin</button></li>
                 <li><button onclick="openPerson('P2Content')">Zachary</button></li>
                 <li><button onclick="openPerson('P3Content')">Daniel</button></li>
@@ -25,7 +26,7 @@
     <!-- Content for Team -->
     <section id="TContent" class="person-content">
         <div class="tab">
-            <button class="tablinks active" onclick="openProject(event, 'aboutTheClass')">About the Class</button>
+            <button class="tablinks" onclick="openProject(event, 'aboutTheClass')">About the Class</button>
             <button class="tablinks" onclick="openProject(event, 'pupperRace')">Pupper Race</button>
 			<button class="tablinks" onclick="openProject(event, 'pupperFinal')">Final Project</button>
         </div>
@@ -37,7 +38,7 @@
                         Welcome to our portfolio, showcasing the work we've done for the Robotics 421 class during the Spring term of 2024. Use the tabs at the top to navigate between the different lab mates on our team and explore their individual projects and "About Me" pages. Under the "Team" tab, you'll find some of our group projects, including the class-wide pupper race and our "Dog-a-pult" project. In the "Dog-a-pult" project, we built and programmed a mini pupper to launch a marble into a box using only an April Tag for guidance.
                     </p>
                     <p>
-                        Throughout the term, we worked with the Misty 2 and Mini Pupper robot platforms, discovering both the challenges and rewards of building robots. We hope to continue building on what we learned in this class throughout our careers.
+                        Throughout the term, we worked with the Misty 2 and Mini Pupper robot platforms, discovering both the challenges and rewards of building robots. Each platform had it's advantages, but we all prefered working with the mini pupper as it is an open source platform allowing for more creativity and collaboration with the community. We hope to continue building on what we learned in this class throughout our careers.
                     </p>
                 </div>
             </div>
@@ -84,7 +85,7 @@
     <!-- Content for Justin -->
     <section id="P1Content" class="person-content">
         <div class="tab">
-            <button class="tablinks active" onclick="openProject(event, 'AboutMeP1')">About Me</button>
+            <button class="tablinks" onclick="openProject(event, 'AboutMeP1')">About Me</button>
             <button class="tablinks" onclick="openProject(event, 'Project1P1')">Individual Artifact 1</button>
             <button class="tablinks" onclick="openProject(event, 'Project2P1')">Individual Artifact 2</button>
             <button class="tablinks" onclick="openProject(event, 'Project3P1')">Individual Artifact 3</button>
@@ -166,7 +167,7 @@
         </div>
         <div id="AboutMeP2" class="tabcontent">
             <div class="about-me-container">
-                <img src="files/Mossy.jpg" alt="Your Picture" class="about-me-image">
+                <img src="files/mossy_profilepic.jpg" alt="Portrait of Zachary Mossbarger" class="about-me-image">
                 <div class="about-me-content">
                     <h2>About Me</h2>
                     <p>Welcome, my name is Zachary Mossbarger but most people refer to me as "Mossy". 
@@ -386,6 +387,6 @@
         </div>
     </section>
 
-    <script src="script.js"></script>
+
 </body>
 </html>
